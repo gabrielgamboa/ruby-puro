@@ -20,22 +20,25 @@ loop do
     print "Digite o segundo número: "
     secondNumber = gets.chomp.to_f
 
+    result = #no ruby, é possivel retornar em uma variável um valor retornado pelo switch case
     case option
     when 1
-        puts "Soma: #{firstNumber + secondNumber}"
+         "Soma: #{firstNumber + secondNumber}"
     
     when 2
-        puts "Subtração: #{firstNumber - secondNumber}"
+         "Subtração: #{firstNumber - secondNumber}"
     
     when 3
-        puts "Multiplicação: #{firstNumber * secondNumber}"
+         "Multiplicação: #{firstNumber * secondNumber}"
 
     when 4
-        puts "Divisão: #{firstNumber / secondNumber}"
+         "Divisão: #{firstNumber / secondNumber}"
 
     else
-        puts "Não foi possível indentificar a operação desejada."
+         "Não foi possível indentificar a operação desejada."
     end
+
+    puts result
 
     puts "Pressione qualquer tecla para reiniciar o programa."
     STDIN.getch ## pega um caractere
