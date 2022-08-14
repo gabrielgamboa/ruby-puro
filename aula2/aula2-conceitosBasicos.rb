@@ -1,5 +1,5 @@
 int = 10
-puts int.class
+puts int.class #traz o tipo da variavel
 
 int = 10.01
 puts int.class
