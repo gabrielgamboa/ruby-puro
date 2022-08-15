@@ -61,25 +61,3 @@ def ez(name, &block) #deixar sempre como ultimo argumento
 end
     
 ez('Leonardo') { puts "Hellow #{@name}" }
-
-
-
-
-
-
-def asa(numbers, &block)
- if block_given?
-   numbers.each do |key, value|
-     block.call(key, value)
-   end
- end
-end
-
-numbers = { 2 => 2, 3 => 3, 4 => 4 }
-
-
-asa(numbers) do |key, value|
- puts "#{key} * #{value} = #{key * value}"
- puts "#{key} + #{value} = #{key + value}"
- puts "---"
-end
