@@ -26,3 +26,9 @@ puts /A\d/.match('A4')
 # verifique o casamento de padrão em uma etiqueta que começa com uma letra e 3 números.
 puts "A343".match(/[A-Z]\d{3}/).pre_match # ou \d\d\d
 puts "BBB AAAA".match(/A{3,}/) #virgula indica que o A pode ter aparecido uma ou mais vezes
+
+
+
+
+#DESAFIO: REGEX PARA CPF
+puts "447.895.258-21".match(/\d{3}\.\d{3}\.\d{3}\-\d{2}/)
